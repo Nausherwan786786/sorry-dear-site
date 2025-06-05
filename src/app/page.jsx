@@ -40,39 +40,30 @@ export default function Home() {
   }
 
   return (
-    <>
-      <MusicPlayer src="/audio/bg.mp3" autoPlay loop />
+    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
+      <StarryBackground />
 
-      <div className="min-h-screen bg-gray-900 relative overflow-hidden">
-        <StarryBackground />
+      {/* Uncomment this if you want to add a background song */}
+      {/* {showMusicPlayer && <MusicPlayer musicPlaying={musicPlaying} setMusicPlaying={setMusicPlaying} />} */}
 
-        {/* Optional: Show music controls only when needed */}
-        {/* {showMusicPlayer && (
-          <MusicPlayer
-            musicPlaying={musicPlaying}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentPage}
+          initial="initial"
+          animate="in"
+          exit="out"
+          variants={pageVariants}
+          transition={pageTransition}
+          className="relative z-10"
+        >
+          <CurrentComponent
+            setCurrentPage={setCurrentPage}
             setMusicPlaying={setMusicPlaying}
+            setShowMusicPlayer={setShowMusicPlayer}
+            musicPlaying={musicPlaying}
           />
-        )} */}
-
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentPage}
-            initial="initial"
-            animate="in"
-            exit="out"
-            variants={pageVariants}
-            transition={pageTransition}
-            className="relative z-10"
-          >
-            <CurrentComponent
-              setCurrentPage={setCurrentPage}
-              setMusicPlaying={setMusicPlaying}
-              setShowMusicPlayer={setShowMusicPlayer}
-              musicPlaying={musicPlaying}
-            />
-          </motion.div>
-        </AnimatePresence>
-      </div>
-    </>
+        </motion.div>
+      </AnimatePresence>
+    </div>
   )
 }
