@@ -109,7 +109,7 @@ export default function GiftPage() {
                 }}
                 className="text-pink-200 mt-6 text-xl relative z-10"
               >
-                Click to open!🎁✨
+                Click here my Panda !🎁✨
               </motion.p>
 
               {/* Floating sparkles around gift */}
@@ -212,7 +212,7 @@ export default function GiftPage() {
                       transition={{ duration: 0.8, delay: 0.9 }}
                       className="text-xl text-pink-200"
                     >
-                      You mean everything to me💕✨
+                      You mean everything to me 💕✨ I love you my Panda ❤️ Good Bye ! 🥰
                     </motion.p>
                   </motion.div>
                 )}
