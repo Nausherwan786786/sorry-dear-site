@@ -129,7 +129,7 @@ export default function LetterPage({ setCurrentPage }) {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="text-xl text-purple-200 leading-relaxed"
           >
-            You're so beautiful, but I still hurt you… I'm so sorry.💔
+            You're such a nice soul, but I still hurt you… I'm so sorry Zarmeena's Mother.🥺💔
           </motion.p>
 
           <motion.p
@@ -146,7 +146,7 @@ export default function LetterPage({ setCurrentPage }) {
             transition={{ delay: 3, duration: 0.8 }}
             className="text-pink-300 text-xl mt-6"
           >
-            Can you please forgive me…?💔
+            Can you please forgive me My dear Beautiful soul…? 💔
           </motion.p>
 
         </motion.div>
