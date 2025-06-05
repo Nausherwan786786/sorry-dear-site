@@ -39,7 +39,7 @@ export default function Home() {
     duration: 0.6,
   }
 
-  return (<MusicPlayer src="/bg.mp3" autoPlay loop />
+  return (<MusicPlayer src="/audio/bg.mp3" autoPlay loop />
     <div className="min-h-screen bg-gray-900 relative overflow-hidden">
       <StarryBackground />
 
