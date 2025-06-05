@@ -39,13 +39,11 @@ export default function Home() {
     duration: 0.6,
   }
 
-  return (<MusicPlayer src="/audio/bg.mp3" autoPlay loop />
+  return (
+  <>
+    <MusicPlayer src="/audio/bg.mp3" autoPlay loop />
     <div className="min-h-screen bg-gray-900 relative overflow-hidden">
       <StarryBackground />
-
-      {/* Uncomment this if you want to add a background song */}
-      {/* {showMusicPlayer && <MusicPlayer musicPlaying={musicPlaying} setMusicPlaying={setMusicPlaying} />} */}
-
       <AnimatePresence mode="wait">
         <motion.div
           key={currentPage}
@@ -65,5 +63,5 @@ export default function Home() {
         </motion.div>
       </AnimatePresence>
     </div>
-  )
-}
+  </>
+)
