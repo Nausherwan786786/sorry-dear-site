@@ -212,7 +212,7 @@ export default function GiftPage() {
                       transition={{ duration: 0.8, delay: 0.9 }}
                       className="text-xl text-pink-200"
                     >
-                      You mean everything to me 💕✨ I love you my Panda ❤️ Good Bye ! 🥰
+                      You mean everything to me 💕✨ Love you Farjana dalli 🥰
                     </motion.p>
                   </motion.div>
                 )}
